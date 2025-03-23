@@ -1,0 +1,7 @@
+*.zip
+.idea
+yishui-oj-backend
+
+#yishui-oj-frontend
+yishui-oj-frontend/dist
+yishui-oj-frontend/node_modules
