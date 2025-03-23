@@ -1,6 +1,6 @@
 *.zip
 .idea
-yishui-oj-backend
+#yishui-oj-backend
 
 #yishui-oj-frontend
 yishui-oj-frontend/dist
