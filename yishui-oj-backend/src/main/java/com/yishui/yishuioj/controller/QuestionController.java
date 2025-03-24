@@ -11,6 +11,10 @@ import com.yishui.yishuioj.common.ResultUtils;
 import com.yishui.yishuioj.constant.UserConstant;
 import com.yishui.yishuioj.exception.BusinessException;
 import com.yishui.yishuioj.exception.ThrowUtils;
+import com.yishui.yishuioj.model.dto.question.QuestionAddRequest;
+import com.yishui.yishuioj.model.dto.question.QuestionEditRequest;
+import com.yishui.yishuioj.model.dto.question.QuestionQueryRequest;
+import com.yishui.yishuioj.model.dto.question.QuestionUpdateRequest;
 import com.yishui.yishuioj.model.entity.Question;
 import com.yishui.yishuioj.model.entity.User;
 import com.yishui.yishuioj.model.vo.QuestionVO;
@@ -22,7 +26,7 @@ import javax.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.bind.annotation.QuestionMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 
 /**
  * 题目接口
@@ -201,25 +205,6 @@ public class QuestionController {
         ThrowUtils.throwIf(size > 20, ErrorCode.PARAMS_ERROR);
         Page<Question> questionPage = questionService.page(new Page<>(current, size),
                 questionService.getQueryWrapper(questionQueryRequest));
-        return ResultUtils.success(questionService.getQuestionVOPage(questionPage, request));
-    }
-
-    // endregion
-
-    /**
-     * 分页搜索（从 ES 查询，封装类）
-     *
-     * @param questionQueryRequest
-     * @param request
-     * @return
-     */
-    @PostMapping("/search/page/vo")
-    public BaseResponse<Page<QuestionVO>> searchQuestionVOByPage(@RequestBody QuestionQueryRequest questionQueryRequest,
-                                                         HttpServletRequest request) {
-        long size = questionQueryRequest.getPageSize();
-        // 限制爬虫
-        ThrowUtils.throwIf(size > 20, ErrorCode.PARAMS_ERROR);
-        Page<Question> questionPage = questionService.searchFromEs(questionQueryRequest);
         return ResultUtils.success(questionService.getQuestionVOPage(questionPage, request));
     }
 
