@@ -5,6 +5,6 @@
 
 export type JudgeConfig = {
     memoryLimit?: number;
-    stackLimit?: number;
+    stackLimit?: string;
     timeLimit?: number;
 };

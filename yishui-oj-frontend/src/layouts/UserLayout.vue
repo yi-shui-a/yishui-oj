@@ -4,16 +4,14 @@
       <a-layout-header class="header">
         <a-space>
           <img src="../assets/oj-logo.svg" class="logo" />
-          <div>yihsui OJ</div>
+          <div>yishui OJ</div>
         </a-space>
       </a-layout-header>
       <a-layout-content class="content">
         <router-view />
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://yupi.icu" target="_blank">
-          yishui-oj               by yishui
-        </a>
+        <a href="" target="_blank">yishui-oj by yishui</a>
       </a-layout-footer>
     </a-layout>
   </div>
@@ -22,8 +20,7 @@
 <style scoped>
 #userLayout {
   text-align: center;
-  background: url("../assets/login-background.png")
-    0% 0% / 100% 100%;
+  background: url("../assets/login-background.png") 0% 0% / 100% 100%;
 }
 
 #userLayout .logo {

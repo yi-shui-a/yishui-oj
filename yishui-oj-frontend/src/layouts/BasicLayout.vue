@@ -8,9 +8,7 @@
         <router-view />
       </a-layout-content>
       <a-layout-footer class="footer">
-        <a href="https://yupi.icu" target="_blank">
-          yishui-oj               by yishui
-        </a>
+        <a href="" target="_blank">yishui-oj by yishui</a>
       </a-layout-footer>
     </a-layout>
   </div>
