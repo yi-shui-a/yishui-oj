@@ -101,3 +101,8 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.yishui.yishuioj.controller
+
+# 代码沙箱配置
+codeSandbox:
+  # 沙箱类型
+  type: example
