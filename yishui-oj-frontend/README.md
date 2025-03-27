@@ -25,6 +25,7 @@ npx openapi-typescript-codegen --input http://localhost:8101/api/v2/api-docs --o
 将 `BASE: 'http://localhost:8101/api'`，修改为 `'http://localhost:8101'` 。
 
 
+
 ## Project setup (yarn)
 
 ```
