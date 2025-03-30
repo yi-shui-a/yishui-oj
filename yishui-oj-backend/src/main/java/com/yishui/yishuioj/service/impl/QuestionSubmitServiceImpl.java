@@ -1,41 +1,29 @@
 package com.yishui.yishuioj.service.impl;
 
 import cn.hutool.core.collection.CollUtil;
-import cn.hutool.core.collection.CollectionUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.yishui.yishuioj.common.ErrorCode;
 import com.yishui.yishuioj.constant.CommonConstant;
 import com.yishui.yishuioj.exception.BusinessException;
-import com.yishui.yishuioj.model.dto.question.QuestionQueryRequest;
-import com.yishui.yishuioj.model.dto.questionSubmit.JudgeInfo;
 import com.yishui.yishuioj.model.dto.questionSubmit.QuestionSubmitAddRequest;
 import com.yishui.yishuioj.model.dto.questionSubmit.QuestionSubmitQueryRequest;
 import com.yishui.yishuioj.model.entity.Question;
-import com.yishui.yishuioj.model.entity.QuestionSubmit;
 import com.yishui.yishuioj.model.entity.QuestionSubmit;
 import com.yishui.yishuioj.model.entity.User;
 import com.yishui.yishuioj.model.enums.QuestionSubmitLanguageEnum;
 import com.yishui.yishuioj.model.enums.QuestionSubmitStatusEnum;
 import com.yishui.yishuioj.model.vo.QuestionSubmitVO;
-import com.yishui.yishuioj.model.vo.QuestionVO;
-import com.yishui.yishuioj.model.vo.UserVO;
 import com.yishui.yishuioj.service.*;
 import com.yishui.yishuioj.service.QuestionSubmitService;
 import com.yishui.yishuioj.mapper.QuestionSubmitMapper;
 import com.yishui.yishuioj.utils.SqlUtils;
 import org.apache.commons.lang3.ObjectUtils;
-import org.apache.commons.lang3.StringUtils;
-import org.springframework.aop.framework.AopContext;
 import org.springframework.stereotype.Service;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpServletRequest;
 import java.util.List;
-import java.util.Map;
-import java.util.Set;
 import java.util.stream.Collectors;
 
 /**

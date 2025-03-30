@@ -1,19 +1,14 @@
 package com.yishui.yishuioj.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.yishui.yishuioj.model.dto.question.JudgeConfig;
-import com.yishui.yishuioj.model.dto.questionSubmit.JudgeInfo;
-import com.yishui.yishuioj.model.entity.Question;
+import com.yishui.yishuioj.judge.codesandbox.model.JudgeInfo;
 import com.yishui.yishuioj.model.entity.QuestionSubmit;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;
 
 import java.io.Serializable;
 import java.util.Date;
-import java.util.List;
 
 /**
  * 题目提交封装类

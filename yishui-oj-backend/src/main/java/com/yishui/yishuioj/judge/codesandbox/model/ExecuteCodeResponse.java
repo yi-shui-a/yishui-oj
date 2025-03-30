@@ -2,8 +2,6 @@ package com.yishui.yishuioj.judge.codesandbox.model;
 
 import java.util.List;
 
-import com.yishui.yishuioj.model.dto.question.JudgeConfig;
-import com.yishui.yishuioj.model.dto.questionSubmit.JudgeInfo;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

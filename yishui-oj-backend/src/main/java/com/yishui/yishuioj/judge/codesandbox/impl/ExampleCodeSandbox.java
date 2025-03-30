@@ -3,7 +3,7 @@ package com.yishui.yishuioj.judge.codesandbox.impl;
 import com.yishui.yishuioj.judge.codesandbox.CodeSandbox;
 import com.yishui.yishuioj.judge.codesandbox.model.ExecuteCodeRequest;
 import com.yishui.yishuioj.judge.codesandbox.model.ExecuteCodeResponse;
-import com.yishui.yishuioj.model.dto.questionSubmit.JudgeInfo;
+import com.yishui.yishuioj.judge.codesandbox.model.JudgeInfo;
 import com.yishui.yishuioj.model.enums.JudgeInfoMessageEnum;
 import com.yishui.yishuioj.model.enums.QuestionSubmitStatusEnum;
 import lombok.extern.slf4j.Slf4j;

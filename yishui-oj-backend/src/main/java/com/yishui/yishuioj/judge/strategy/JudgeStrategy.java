@@ -1,6 +1,6 @@
 package com.yishui.yishuioj.judge.strategy;
 
-import com.yishui.yishuioj.model.dto.questionSubmit.JudgeInfo;
+import com.yishui.yishuioj.judge.codesandbox.model.JudgeInfo;
 
 /**
  * 判题策略接口

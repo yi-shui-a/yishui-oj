@@ -1,4 +1,4 @@
-package com.yishui.yishuioj.model.dto.questionSubmit;
+package com.yishui.yishuioj.judge.codesandbox.model;
 
 import lombok.Data;
 
